@@ -1,0 +1,10 @@
+namePrefix: prod-
+namespace: prod
+bases:
+  - ../../base
+imageTags:
+  - name: devopstest/nodejs-docker
+    newTag: v201
+patchesStrategicMerge:
+  - deployment-patch.yaml
+  - service-patch.yaml
